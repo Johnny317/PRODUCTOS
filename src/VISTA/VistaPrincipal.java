@@ -4,18 +4,54 @@
  */
 package VISTA;
 
+import Controlador.ControladorProductos;
+import javax.swing.JFrame;
+
 /**
  *
  * @author Jhony Espinoza
  */
 public class VistaPrincipal extends javax.swing.JFrame {
     
-
+  private VistaAgregarP vistaAgregar;
+    private VistaEditarP vistaEditar;
+    private VistaEliminarP vistaEliminar;
+    private VistaListaP vistaLista;
+    
+    // Controlador
+    private ControladorProductos controlador;
+    
     /**
      * Creates new form VistaPrincipal
      */
     public VistaPrincipal() {
         initComponents();
+        inicializarSistema();
+    }
+    private void inicializarSistema() {
+        try {
+            // Crear instancias de las vistas
+            vistaAgregar = new VistaAgregarP();
+            vistaEditar = new VistaEditarP();
+            vistaEliminar = new VistaEliminarP();
+            vistaLista = new VistaListaP();
+            
+            // Crear controlador
+            controlador = new ControladorProductos();
+            
+            // Configurar el controlador con las vistas
+            controlador.configurarVistas(this, vistaAgregar, vistaEditar, vistaEliminar, vistaLista);
+            
+            
+            // Inicialmente ocultar el panel contenedor
+            jPanelCONTENEDOR.setVisible(true);
+            
+            System.out.println("Sistema MVC inicializado correctamente");
+            
+        } catch (Exception e) {
+            System.err.println("Error al inicializar el sistema: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -227,27 +263,14 @@ public class VistaPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonVISTAELIMINARPActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-     
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new VistaPrincipal().setVisible(true));
-    }
+   
+ 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButtonVISTAAGREGARP;
-    private javax.swing.JButton jButtonVISTADITARP;
-    private javax.swing.JButton jButtonVISTAELIMINARP;
-    private javax.swing.JButton jButtonVISTALISTAP;
+    public javax.swing.JButton jButtonVISTAAGREGARP;
+    public javax.swing.JButton jButtonVISTADITARP;
+    public javax.swing.JButton jButtonVISTAELIMINARP;
+    public javax.swing.JButton jButtonVISTALISTAP;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -255,7 +278,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JPanel jPanelCONTENEDOR;
+    public javax.swing.JPanel jPanelCONTENEDOR;
     private javax.swing.JPanel jPanelNAVEGACION;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
