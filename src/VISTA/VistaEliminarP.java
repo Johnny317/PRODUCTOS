@@ -88,6 +88,7 @@ public class VistaEliminarP extends javax.swing.JPanel {
         jPanelCONTENEDOR1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 218, -1, -1));
 
         jTextFieldNOMBREELI.setBackground(new java.awt.Color(204, 204, 204));
+        jTextFieldNOMBREELI.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jTextFieldNOMBREELI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldNOMBREELIActionPerformed(evt);
@@ -96,6 +97,7 @@ public class VistaEliminarP extends javax.swing.JPanel {
         jPanelCONTENEDOR1.add(jTextFieldNOMBREELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 199, -1));
 
         jTextFieldPRECIOELI.setBackground(new java.awt.Color(204, 204, 204));
+        jTextFieldPRECIOELI.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jPanelCONTENEDOR1.add(jTextFieldPRECIOELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 199, -1));
 
         jComboBoxCATEGORIAELI.setBackground(new java.awt.Color(204, 204, 204));
@@ -104,6 +106,7 @@ public class VistaEliminarP extends javax.swing.JPanel {
         jPanelCONTENEDOR1.add(jSpinnerCANTIDADELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 178, 92, -1));
 
         jTextFieldPROVEEDORELI.setBackground(new java.awt.Color(204, 204, 204));
+        jTextFieldPROVEEDORELI.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jPanelCONTENEDOR1.add(jTextFieldPROVEEDORELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 224, 199, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RECURSOS/boxVP.png"))); // NOI18N
@@ -123,7 +126,7 @@ public class VistaEliminarP extends javax.swing.JPanel {
 
         jButtonBACK.setBackground(new java.awt.Color(42, 42, 59));
         jButtonBACK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RECURSOS/arrow-left.png"))); // NOI18N
-        jPanelCONTENEDOR1.add(jButtonBACK, new org.netbeans.lib.awtextra.AbsoluteConstraints(754, 6, -1, 53));
+        jPanelCONTENEDOR1.add(jButtonBACK, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 10, -1, 53));
 
         jLabel8.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(242, 242, 242));
@@ -135,7 +138,7 @@ public class VistaEliminarP extends javax.swing.JPanel {
                 jTextFieldIDELIActionPerformed(evt);
             }
         });
-        jPanelCONTENEDOR1.add(jTextFieldIDELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 64, -1, -1));
+        jPanelCONTENEDOR1.add(jTextFieldIDELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 64, 110, -1));
 
         jTableELI.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -162,7 +165,7 @@ public class VistaEliminarP extends javax.swing.JPanel {
                 jButtonBUSCARELIActionPerformed(evt);
             }
         });
-        jPanelCONTENEDOR1.add(jButtonBUSCARELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, -1, -1));
+        jPanelCONTENEDOR1.add(jButtonBUSCARELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, -1, -1));
 
         add(jPanelCONTENEDOR1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 390));
     }// </editor-fold>//GEN-END:initComponents

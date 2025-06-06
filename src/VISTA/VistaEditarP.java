@@ -66,7 +66,7 @@ public class VistaEditarP extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(242, 242, 242));
         jLabel1.setText("ID:");
-        jPanelCONTENEDOR1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(413, 56, -1, -1));
+        jPanelCONTENEDOR1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 60, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(242, 242, 242));
@@ -119,7 +119,7 @@ public class VistaEditarP extends javax.swing.JPanel {
 
         jButtonBACK.setBackground(new java.awt.Color(42, 42, 59));
         jButtonBACK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RECURSOS/arrow-left.png"))); // NOI18N
-        jPanelCONTENEDOR1.add(jButtonBACK, new org.netbeans.lib.awtextra.AbsoluteConstraints(754, 6, -1, 53));
+        jPanelCONTENEDOR1.add(jButtonBACK, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 10, -1, 53));
 
         jLabel8.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(242, 242, 242));
@@ -131,7 +131,7 @@ public class VistaEditarP extends javax.swing.JPanel {
                 jTextFieldIDEDITActionPerformed(evt);
             }
         });
-        jPanelCONTENEDOR1.add(jTextFieldIDEDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 64, -1, -1));
+        jPanelCONTENEDOR1.add(jTextFieldIDEDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 64, 110, -1));
 
         jTableEDIT.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -158,7 +158,7 @@ public class VistaEditarP extends javax.swing.JPanel {
                 jButtonBUSCAREDITActionPerformed(evt);
             }
         });
-        jPanelCONTENEDOR1.add(jButtonBUSCAREDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(527, 56, -1, -1));
+        jPanelCONTENEDOR1.add(jButtonBUSCAREDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, -1, -1));
 
         add(jPanelCONTENEDOR1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 390));
     }// </editor-fold>//GEN-END:initComponents

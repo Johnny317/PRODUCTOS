@@ -50,6 +50,8 @@ public class VistaAgregarP extends javax.swing.JPanel {
         jPanelCONTENEDOR.setBackground(new java.awt.Color(42, 42, 59));
 
         jPanelCONTENEDOR1.setBackground(new java.awt.Color(42, 42, 59));
+        jPanelCONTENEDOR1.setMaximumSize(new java.awt.Dimension(830, 390));
+        jPanelCONTENEDOR1.setMinimumSize(new java.awt.Dimension(830, 390));
         jPanelCONTENEDOR1.setPreferredSize(new java.awt.Dimension(830, 390));
 
         jLabel2.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 24)); // NOI18N
