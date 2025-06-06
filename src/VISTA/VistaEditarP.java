@@ -46,6 +46,9 @@ public class VistaEditarP extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTableEDIT = new javax.swing.JTable();
         jButtonBUSCAREDIT = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jTextFieldCODIGOEDIT = new javax.swing.JTextField();
+        jTextFieldBUSCAREDIT = new javax.swing.JTextField();
 
         setMaximumSize(new java.awt.Dimension(830, 390));
         setMinimumSize(new java.awt.Dimension(830, 390));
@@ -66,7 +69,7 @@ public class VistaEditarP extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(242, 242, 242));
         jLabel1.setText("ID:");
-        jPanelCONTENEDOR1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 60, -1, -1));
+        jPanelCONTENEDOR1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(242, 242, 242));
@@ -94,10 +97,10 @@ public class VistaEditarP extends javax.swing.JPanel {
                 jTextFieldNOMBREEDITActionPerformed(evt);
             }
         });
-        jPanelCONTENEDOR1.add(jTextFieldNOMBREEDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 92, 199, -1));
+        jPanelCONTENEDOR1.add(jTextFieldNOMBREEDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 199, -1));
 
         jTextFieldPRECIOEDIT.setBackground(new java.awt.Color(204, 204, 204));
-        jPanelCONTENEDOR1.add(jTextFieldPRECIOEDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 138, 199, -1));
+        jPanelCONTENEDOR1.add(jTextFieldPRECIOEDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 199, -1));
 
         jComboBoxCATEGORIAEDIT.setBackground(new java.awt.Color(204, 204, 204));
         jComboBoxCATEGORIAEDIT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -124,14 +127,14 @@ public class VistaEditarP extends javax.swing.JPanel {
         jLabel8.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(242, 242, 242));
         jLabel8.setText("Nombre:");
-        jPanelCONTENEDOR1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 86, -1, -1));
+        jPanelCONTENEDOR1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, -1, -1));
 
         jTextFieldIDEDIT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldIDEDITActionPerformed(evt);
             }
         });
-        jPanelCONTENEDOR1.add(jTextFieldIDEDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 64, 110, -1));
+        jPanelCONTENEDOR1.add(jTextFieldIDEDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 110, -1));
 
         jTableEDIT.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -160,6 +163,20 @@ public class VistaEditarP extends javax.swing.JPanel {
         });
         jPanelCONTENEDOR1.add(jButtonBUSCAREDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 60, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel9.setText("Codigo:");
+        jPanelCONTENEDOR1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, -1));
+
+        jTextFieldCODIGOEDIT.setBackground(new java.awt.Color(204, 204, 204));
+        jTextFieldCODIGOEDIT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldCODIGOEDITActionPerformed(evt);
+            }
+        });
+        jPanelCONTENEDOR1.add(jTextFieldCODIGOEDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 200, -1));
+        jPanelCONTENEDOR1.add(jTextFieldBUSCAREDIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 70, 140, -1));
+
         add(jPanelCONTENEDOR1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 390));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -175,6 +192,10 @@ public class VistaEditarP extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonBUSCAREDITActionPerformed
 
+    private void jTextFieldCODIGOEDITActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCODIGOEDITActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldCODIGOEDITActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton jButtonBACK;
@@ -189,10 +210,13 @@ public class VistaEditarP extends javax.swing.JPanel {
     public javax.swing.JLabel jLabel6;
     public javax.swing.JLabel jLabel7;
     public javax.swing.JLabel jLabel8;
+    public javax.swing.JLabel jLabel9;
     public javax.swing.JPanel jPanelCONTENEDOR1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JSpinner jSpinnerCANTIDADEDIT;
     public javax.swing.JTable jTableEDIT;
+    public javax.swing.JTextField jTextFieldBUSCAREDIT;
+    public javax.swing.JTextField jTextFieldCODIGOEDIT;
     public javax.swing.JTextField jTextFieldIDEDIT;
     public javax.swing.JTextField jTextFieldNOMBREEDIT;
     public javax.swing.JTextField jTextFieldPRECIOEDIT;

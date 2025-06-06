@@ -46,6 +46,9 @@ public class VistaEliminarP extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTableELI = new javax.swing.JTable();
         jButtonBUSCARELI = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jTextFieldCODIGOELIMINAR = new javax.swing.JTextField();
+        jTextFieldBUSCARELI = new javax.swing.JTextField();
 
         setMaximumSize(new java.awt.Dimension(830, 390));
         setMinimumSize(new java.awt.Dimension(830, 390));
@@ -65,7 +68,7 @@ public class VistaEliminarP extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(242, 242, 242));
         jLabel1.setText("ID:");
-        jPanelCONTENEDOR1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(413, 64, -1, -1));
+        jPanelCONTENEDOR1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(242, 242, 242));
@@ -138,7 +141,7 @@ public class VistaEliminarP extends javax.swing.JPanel {
                 jTextFieldIDELIActionPerformed(evt);
             }
         });
-        jPanelCONTENEDOR1.add(jTextFieldIDELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 64, 110, -1));
+        jPanelCONTENEDOR1.add(jTextFieldIDELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 310, 110, -1));
 
         jTableELI.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -167,6 +170,19 @@ public class VistaEliminarP extends javax.swing.JPanel {
         });
         jPanelCONTENEDOR1.add(jButtonBUSCARELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel9.setText("Codigo:");
+        jPanelCONTENEDOR1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, -1, -1));
+
+        jTextFieldCODIGOELIMINAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldCODIGOELIMINARActionPerformed(evt);
+            }
+        });
+        jPanelCONTENEDOR1.add(jTextFieldCODIGOELIMINAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 190, -1));
+        jPanelCONTENEDOR1.add(jTextFieldBUSCARELI, new org.netbeans.lib.awtextra.AbsoluteConstraints(401, 60, 160, -1));
+
         add(jPanelCONTENEDOR1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 390));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -186,6 +202,10 @@ public class VistaEliminarP extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonELIMINARActionPerformed
 
+    private void jTextFieldCODIGOELIMINARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCODIGOELIMINARActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldCODIGOELIMINARActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton jButtonBACK;
@@ -200,10 +220,13 @@ public class VistaEliminarP extends javax.swing.JPanel {
     public javax.swing.JLabel jLabel6;
     public javax.swing.JLabel jLabel7;
     public javax.swing.JLabel jLabel8;
+    public javax.swing.JLabel jLabel9;
     public javax.swing.JPanel jPanelCONTENEDOR1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JSpinner jSpinnerCANTIDADELI;
     public javax.swing.JTable jTableELI;
+    public javax.swing.JTextField jTextFieldBUSCARELI;
+    public javax.swing.JTextField jTextFieldCODIGOELIMINAR;
     public javax.swing.JTextField jTextFieldIDELI;
     public javax.swing.JTextField jTextFieldNOMBREELI;
     public javax.swing.JTextField jTextFieldPRECIOELI;

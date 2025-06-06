@@ -33,6 +33,8 @@ public class VistaListaP extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTableList = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
+        jButtonBUSCARLIST = new javax.swing.JButton();
+        jTextFieldBUSCARLIST = new javax.swing.JTextField();
 
         setMaximumSize(new java.awt.Dimension(830, 390));
         setMinimumSize(new java.awt.Dimension(830, 390));
@@ -66,6 +68,17 @@ public class VistaListaP extends javax.swing.JPanel {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RECURSOS/listVL.png"))); // NOI18N
 
+        jButtonBUSCARLIST.setBackground(new java.awt.Color(42, 42, 59));
+        jButtonBUSCARLIST.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
+        jButtonBUSCARLIST.setForeground(new java.awt.Color(204, 204, 204));
+        jButtonBUSCARLIST.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RECURSOS/Buscar.png"))); // NOI18N
+        jButtonBUSCARLIST.setText("BUSCAR");
+        jButtonBUSCARLIST.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonBUSCARLISTActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanelCONTENEDOR1Layout = new javax.swing.GroupLayout(jPanelCONTENEDOR1);
         jPanelCONTENEDOR1.setLayout(jPanelCONTENEDOR1Layout);
         jPanelCONTENEDOR1Layout.setHorizontalGroup(
@@ -76,7 +89,11 @@ public class VistaListaP extends javax.swing.JPanel {
                     .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel7))
+                        .addComponent(jLabel7)
+                        .addGap(28, 28, 28)
+                        .addComponent(jTextFieldBUSCARLIST, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(9, 9, 9)
+                        .addComponent(jButtonBUSCARLIST))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 704, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
@@ -93,20 +110,26 @@ public class VistaListaP extends javax.swing.JPanel {
             .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
                 .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButtonBACKLIST, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel2))))
-                .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
+                        .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jButtonBACKLIST, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
+                                .addGap(14, 14, 14)
+                                .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel2))))
                         .addGap(115, 115, 115)
-                        .addComponent(jLabel1)))
+                        .addComponent(jLabel1))
+                    .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(jTextFieldBUSCARLIST, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButtonBUSCARLIST))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
@@ -132,14 +155,20 @@ public class VistaListaP extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButtonBUSCARLISTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBUSCARLISTActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonBUSCARLISTActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton jButtonBACKLIST;
+    public javax.swing.JButton jButtonBUSCARLIST;
     public javax.swing.JLabel jLabel1;
     public javax.swing.JLabel jLabel2;
     public javax.swing.JLabel jLabel7;
     public javax.swing.JPanel jPanelCONTENEDOR1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable jTableList;
+    public javax.swing.JTextField jTextFieldBUSCARLIST;
     // End of variables declaration//GEN-END:variables
 }

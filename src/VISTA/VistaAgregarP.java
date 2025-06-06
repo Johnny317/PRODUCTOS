@@ -42,6 +42,8 @@ public class VistaAgregarP extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         jButtonAGREGAR = new javax.swing.JButton();
         jButtonBACK = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jTextFieldCODIGOAGREGAR = new javax.swing.JTextField();
 
         setMaximumSize(new java.awt.Dimension(830, 390));
         setMinimumSize(new java.awt.Dimension(830, 390));
@@ -104,6 +106,16 @@ public class VistaAgregarP extends javax.swing.JPanel {
         jButtonBACK.setBackground(new java.awt.Color(42, 42, 59));
         jButtonBACK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RECURSOS/arrow-left.png"))); // NOI18N
 
+        jLabel8.setFont(new java.awt.Font("Georgia", 0, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel8.setText("Codigo:");
+
+        jTextFieldCODIGOAGREGAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldCODIGOAGREGARActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanelCONTENEDOR1Layout = new javax.swing.GroupLayout(jPanelCONTENEDOR1);
         jPanelCONTENEDOR1.setLayout(jPanelCONTENEDOR1Layout);
         jPanelCONTENEDOR1Layout.setHorizontalGroup(
@@ -136,16 +148,23 @@ public class VistaAgregarP extends javax.swing.JPanel {
                                 .addComponent(jTextFieldPROVEEDORAGREGAR, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                 .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonAGREGAR)
                     .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
-                        .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSpinnerCANTIAD, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBoxCATEGORIA, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(70, Short.MAX_VALUE))
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxCATEGORIA, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jSpinnerCANTIAD, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(26, 26, 26)
+                        .addComponent(jTextFieldCODIGOAGREGAR, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(82, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelCONTENEDOR1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButtonAGREGAR)
+                .addGap(312, 312, 312))
         );
         jPanelCONTENEDOR1Layout.setVerticalGroup(
             jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -159,25 +178,38 @@ public class VistaAgregarP extends javax.swing.JPanel {
                     .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButtonBACK, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(26, 26, 26)
-                .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextFieldNOMBREAGREGAR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
-                    .addComponent(jSpinnerCANTIAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(43, 43, 43)
-                .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jComboBoxCATEGORIA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextFieldPRECIOAGREGAR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(46, 46, 46)
+                .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
+                        .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanelCONTENEDOR1Layout.createSequentialGroup()
+                                .addGap(26, 26, 26)
+                                .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jTextFieldNOMBREAGREGAR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(43, 43, 43))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelCONTENEDOR1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jTextFieldCODIGOAGREGAR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(54, 54, 54)))
+                        .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(jTextFieldPRECIOAGREGAR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4))
+                        .addGap(46, 46, 46))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelCONTENEDOR1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSpinnerCANTIAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(55, 55, 55)))
                 .addGroup(jPanelCONTENEDOR1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jTextFieldPROVEEDORAGREGAR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(jTextFieldPROVEEDORAGREGAR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5)
+                    .addComponent(jComboBoxCATEGORIA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addComponent(jButtonAGREGAR)
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addGap(26, 26, 26))
         );
 
         javax.swing.GroupLayout jPanelCONTENEDORLayout = new javax.swing.GroupLayout(jPanelCONTENEDOR);
@@ -205,7 +237,7 @@ public class VistaAgregarP extends javax.swing.JPanel {
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jPanelCONTENEDOR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -222,6 +254,10 @@ public class VistaAgregarP extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldNOMBREAGREGARActionPerformed
 
+    private void jTextFieldCODIGOAGREGARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCODIGOAGREGARActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldCODIGOAGREGARActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton jButtonAGREGAR;
@@ -234,9 +270,11 @@ public class VistaAgregarP extends javax.swing.JPanel {
     public javax.swing.JLabel jLabel5;
     public javax.swing.JLabel jLabel6;
     public javax.swing.JLabel jLabel7;
+    public javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanelCONTENEDOR;
     public javax.swing.JPanel jPanelCONTENEDOR1;
     public javax.swing.JSpinner jSpinnerCANTIAD;
+    public javax.swing.JTextField jTextFieldCODIGOAGREGAR;
     public javax.swing.JTextField jTextFieldNOMBREAGREGAR;
     public javax.swing.JTextField jTextFieldPRECIOAGREGAR;
     public javax.swing.JTextField jTextFieldPROVEEDORAGREGAR;
